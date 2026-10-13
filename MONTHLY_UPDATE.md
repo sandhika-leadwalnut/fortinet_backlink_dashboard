@@ -17,7 +17,7 @@ That file is generated from the monthly Word doc. Nobody edits components or `mo
 4. `npm run build` must succeed. `npm run dev` shows the page locally.
 5. Commit and push to `main` of `sandhika-leadwalnut/fortinet_backlink_dashboard`. GitHub Actions deploys to Vercel and attaches `https://fortinet-backlinking-dashboard-<month><year>.vercel.app` (month taken from the doc). Earlier months' links keep their own data. First-time setup: see `SETUP_AND_TEST.md`.
 
-The Claude skill `fortinet-dashboard-monthly-update` does all of this for you.
+The Claude skill `fortinet-dashboard-monthly-update` does all of this for you, including the push: just attach the doc in Claude.
 
 ## What the script does
 
