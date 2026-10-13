@@ -1,0 +1,92 @@
+name: Deploy monthly dashboard
+
+# Every push to main builds the dashboard from data/report.json, deploys it to Vercel,
+# and gives that deployment its own monthly link:
+#   https://fortinet-backlinking-dashboard-<month><year>.vercel.app
+# Each deployment is a frozen copy, so earlier months' links keep showing their own data.
+# Pushing again for the same month (a correction) moves only that month's link.
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      link_name:
+        description: "Optional: use this exact link name instead of the month name (e.g. fortinet-backlinking-dashboard-september2026-test)"
+        required: false
+        default: ""
+
+concurrency:
+  group: vercel-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    # Skip until the first month's data has been added
+    if: ${{ hashFiles('data/report.json') != '' }}
+    runs-on: ubuntu-latest
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+      VERCEL_TELEMETRY_DISABLED: 1
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check the build works
+        run: npm run build
+
+      - name: Work out this month's link name
+        id: link
+        env:
+          OVERRIDE: ${{ github.event.inputs.link_name }}
+          # Optional repo variable for testing, e.g. "-test" (Settings > Secrets and variables > Actions > Variables)
+          LINK_SUFFIX: ${{ vars.LINK_SUFFIX }}
+        run: |
+          if [ -n "$OVERRIDE" ]; then
+            NAME="$OVERRIDE"
+          else
+            NAME=$(node -e '
+              const m = require("./data/report.json").meta.reportMonth; // e.g. 2026-09
+              const [y, mo] = m.split("-");
+              const months = ["january","february","march","april","may","june","july",
+                              "august","september","october","november","december"];
+              console.log(`fortinet-backlinking-dashboard-${months[Number(mo) - 1]}${y}`);
+            ')
+          fi
+          NAME="${NAME%.vercel.app}${LINK_SUFFIX}"
+          echo "name=$NAME" >> "$GITHUB_OUTPUT"
+          echo "Monthly link will be: https://$NAME.vercel.app"
+
+      - name: Deploy to Vercel
+        id: deploy
+        run: |
+          URL=$(npx vercel deploy --prod --yes --token "$VERCEL_TOKEN")
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+          echo "Deployment: $URL"
+
+      - name: Attach the monthly link
+        run: |
+          npx vercel alias set "${{ steps.deploy.outputs.url }}" "${{ steps.link.outputs.name }}.vercel.app" --token "$VERCEL_TOKEN"
+
+      - name: Summary
+        run: |
+          {
+            echo "### Dashboard deployed"
+            echo ""
+            echo "Monthly link: https://${{ steps.link.outputs.name }}.vercel.app"
+            echo ""
+            echo "Deployment: ${{ steps.deploy.outputs.url }}"
+          } >> "$GITHUB_STEP_SUMMARY"
