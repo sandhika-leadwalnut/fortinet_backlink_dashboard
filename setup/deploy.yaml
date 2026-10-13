@@ -5,6 +5,8 @@ name: Deploy monthly dashboard
 #   https://fortinet-backlinking-dashboard-<month><year>.vercel.app
 # Each deployment is a frozen copy, so earlier months' links keep showing their own data.
 # Pushing again for the same month (a correction) moves only that month's link.
+# A custom link name can be saved in data/report.json (meta.linkName) by
+#   python scripts/update_dashboard.py <doc> --link-name <name>
 
 on:
   push:
@@ -23,8 +25,6 @@ concurrency:
 
 jobs:
   deploy:
-    # Skip until the first month's data has been added
-    if: ${{ hashFiles('data/report.json') != '' }}
     runs-on: ubuntu-latest
     env:
       VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
@@ -52,21 +52,23 @@ jobs:
         id: link
         env:
           OVERRIDE: ${{ github.event.inputs.link_name }}
-          # Optional repo variable for testing, e.g. "-test" (Settings > Secrets and variables > Actions > Variables)
-          LINK_SUFFIX: ${{ vars.LINK_SUFFIX }}
         run: |
+          # Priority: manual "Run workflow" box > linkName saved in report.json > month default
           if [ -n "$OVERRIDE" ]; then
             NAME="$OVERRIDE"
           else
             NAME=$(node -e '
-              const m = require("./data/report.json").meta.reportMonth; // e.g. 2026-09
-              const [y, mo] = m.split("-");
+              const meta = require("./data/report.json").meta;
+              if (meta.linkName) { console.log(meta.linkName); process.exit(0); }
+              const [y, mo] = meta.reportMonth.split("-"); // e.g. 2026-09
               const months = ["january","february","march","april","may","june","july",
                               "august","september","october","november","december"];
               console.log(`fortinet-backlinking-dashboard-${months[Number(mo) - 1]}${y}`);
             ')
           fi
-          NAME="${NAME%.vercel.app}${LINK_SUFFIX}"
+          NAME="${NAME#https://}"
+          NAME="${NAME%/}"
+          NAME="${NAME%.vercel.app}"
           echo "name=$NAME" >> "$GITHUB_OUTPUT"
           echo "Monthly link will be: https://$NAME.vercel.app"
 
@@ -79,7 +81,7 @@ jobs:
 
       - name: Attach the monthly link
         run: |
-          npx vercel alias set "${{ steps.deploy.outputs.url }}" "${{ steps.link.outputs.name }}.vercel.app" --token "$VERCEL_TOKEN"
+          npx vercel alias set "${{ steps.deploy.outputs.url }}" "${{ steps.link.outputs.name }}.vercel.app" --token "$VERCEL_TOKEN" --scope "$VERCEL_ORG_ID"
 
       - name: Summary
         run: |

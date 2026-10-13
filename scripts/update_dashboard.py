@@ -442,6 +442,8 @@ def main():
     ap.add_argument("docx")
     ap.add_argument("--report-date", help='Date shown at the top, e.g. "October 8 2026". Default: today.')
     ap.add_argument("--dry-run", action="store_true", help="Validate only; write nothing.")
+    ap.add_argument("--link-name", help="Optional custom Vercel link name, e.g. fortinet-backlinking-dashboard-september2026-copy. "
+                                        "Default: fortinet-backlinking-dashboard-<month><year>.")
     args = ap.parse_args()
 
     blocks = read_blocks(args.docx)
@@ -548,6 +550,23 @@ def main():
     base = top3_pts[0] if top3_pts else None
     base_name = f"{MONTHS[base['monthIdx']].title()} 20{base['yy']}" if base else ""
     cur_name = f"{MONTHS[m_idx].title()} {year}"
+    default_link = f"fortinet-backlinking-dashboard-{MONTHS[m_idx]}{year}"
+    link_name = default_link
+    if args.link_name:
+        raw = args.link_name.strip().lower()
+        raw = re.sub(r"^https?://", "", raw).split("/")[0]
+        raw = re.sub(r"\.vercel\.app$", "", raw)
+        clean = re.sub(r"-{2,}", "-", re.sub(r"[^a-z0-9-]", "-", raw)).strip("-")[:63].strip("-")
+        if not clean:
+            problems.append(f"Link name '{args.link_name}' has no usable characters.")
+        else:
+            if clean != raw:
+                warnings.append(f"Link name changed to '{clean}' (web addresses can only use a-z, 0-9 and '-').")
+            other = re.fullmatch(r"fortinet-backlinking-dashboard-([a-z]+)(\d{4})(.*)", clean)
+            if other and (other.group(1), other.group(2)) != (MONTHS[m_idx], str(year)):
+                warnings.append(f"Link name '{clean}' looks like another month's link. Publishing would replace "
+                                "that month's dashboard. Double-check before publishing.")
+            link_name = clean
     report_date = args.report_date or (lambda d: f"{d:%B} {d.day} {d.year}")(dt.date.today())
     meta = {
         "client": "Fortinet",
@@ -559,6 +578,7 @@ def main():
         "currentLabel": f"{MONTHS[m_idx][:3].title()}'{str(year)[2:]}",
         "baselineMonthAbbr": MONTHS[base["monthIdx"]][:3].title() if base else "",
         "currentMonthName": MONTHS[m_idx].title(),
+        "linkName": link_name,
         "rankTableMonths": rank_months,
         "sourceFile": os.path.basename(args.docx),
         "generatedAt": dt.datetime.now().isoformat(timespec="seconds"),
@@ -609,6 +629,7 @@ def main():
                 f.write("\n")
         notes.append(f"Wrote data/report.json and {len(extracted)} images to public/reports/{month_key}/")
 
+    notes.insert(0, f"Link: https://{link_name}.vercel.app")
     notes.insert(0, f"Report month: {cur_name} | URLs: {len(urls)} | keywords: {n_kw} | "
                     f"Top 3 now: {len(top3)} | Page 1 now: {len(page1)} | images: {len(extracted)}")
     report(report_json)
