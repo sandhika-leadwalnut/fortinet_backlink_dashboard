@@ -6,12 +6,17 @@ Repo: **https://github.com/sandhika-leadwalnut/fortinet_backlink_dashboard** (on
 
 1. **Attach the month's Word doc** in a new Claude chat and type: *Update the Fortinet dashboard with this doc*.
 2. **Claude checks the doc** and builds the data and the 13 screenshots. You get a short summary plus anything to double-check.
-3. **Claude asks for a link name (optional).**
+3. **Claude shows you the dashboard in the chat** as a private preview page, exactly as it will look when published (charts, tables, screenshots, links). Nothing is public yet.
+4. **Ask for corrections, if any.** Tell Claude what to change, e.g. *"Key finding 2 should say 26%"*, *"the SASE insight has a typo"*, *"use this screenshot for Cyber Attack"* (attach it). Claude applies the changes and refreshes the same preview. Repeat until it looks right.
+   For number changes, also fix the Word doc so the records match.
+5. **Claude asks for a link name (optional).**
    - Type a name, e.g. `fortinet-backlinking-dashboard-september2026-copy`, or
    - say **skip** to use the default monthly link: `fortinet-backlinking-dashboard-<month><year>`, e.g. `...-october2026`.
-4. **Say "yes" to publish.** Claude pushes to GitHub itself. GitHub Actions deploys to Vercel and attaches the link.
-5. **Claude waits for the deploy (about 1 to 2 minutes) and gives you the final link in the chat**:
+6. **Say "yes" to publish.** Claude pushes to GitHub itself. GitHub Actions deploys to Vercel and attaches the link.
+7. **Claude waits for the deploy (about 1 to 2 minutes) and gives you the final link in the chat**:
    `https://<link name>.vercel.app`
+
+The preview page is private to the person who ran the update. To let a colleague review it before publishing, use the page's **Share** menu.
 
 Each deployment is a frozen copy. Publishing October never changes September's link. Re-publishing the same month with the same link name replaces only that link (use this for corrections).
 
@@ -29,6 +34,7 @@ Link name rules: lowercase letters, numbers and `-` only (no `_` or spaces), up 
 | GitHub secrets `VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID` | Done. The token must be **team-scoped (Leadwalnut)**, not project-scoped, or attaching the link fails with "User not found". |
 | `LINK_SUFFIX` repo variable | No longer used. If you created it, delete it: repo **Settings** > **Secrets and variables** > **Actions** > **Variables**. |
 | Each person who runs updates | Needs GitHub linked in Claude (**Settings** > **Connectors** > **GitHub**) and Write access to the repo (Sandhika adds them under repo **Settings** > **Collaborators**). |
+| Public access to the links | Vercel project **Settings** > **Deployment Protection** > turn **Vercel Authentication** off, otherwise the links ask for a Vercel login. |
 | Repo visibility | Currently public. Recommended: make it private (repo **Settings** > General > Danger Zone). |
 
 ---
@@ -37,11 +43,12 @@ Link name rules: lowercase letters, numbers and `-` only (no `_` or spaces), up 
 
 1. Save the latest `fortinet-dashboard-monthly-update` skill (from the card in the chat).
 2. Open a **new** Claude chat, attach the September 2026 doc, and type *Update the Fortinet dashboard with this doc*.
-3. When Claude asks for the link name, type **`fortinet-backlinking-dashboard-september2026-copy`**.
+3. Check the preview Claude shows you. Ask for a small correction to try it (you can change it back).
+4. When Claude asks for the link name, type **`fortinet-backlinking-dashboard-september2026-copy`**.
    Do **not** skip for September: the default `...-september2026` belongs to the old September dashboard and would be replaced.
-4. Say **yes** to publish.
-5. Claude replies with: `https://fortinet-backlinking-dashboard-september2026-copy.vercel.app`
-6. Open it next to the live dashboard (https://fortinet-backlinking-dashboard-september2026.vercel.app) and check:
+5. Say **yes** to publish.
+6. Claude replies with: `https://fortinet-backlinking-dashboard-september2026-copy.vercel.app`
+7. Open it next to the live dashboard (https://fortinet-backlinking-dashboard-september2026.vercel.app) and check:
 
 - [ ] KPI cards: 45 / 82 / 1,220 / 993
 - [ ] Business impact: 6 to 18, 35 to 44; bars 41683/46105, 6085/7172, 10662/12459
@@ -62,6 +69,8 @@ Known differences (the new version follows the Word doc; the live site had hand-
 | Small text | "Jul'26", 'single quotes' | "Jul '26", "double quotes" as in the doc |
 
 From October onwards you can simply say **skip** at the link question and get `...-october2026`.
+
+**Testing with another month's doc:** same steps. If you skip the link name, it publishes to that month's default link (e.g. `...-august2026`). If that is only a test, give a test name instead (e.g. `...-august2026-test`) so the real link stays free for the real report.
 
 ---
 
