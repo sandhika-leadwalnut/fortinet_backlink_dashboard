@@ -80,3 +80,22 @@ if __name__ == "__main__":
     import json, sys
     for i, b in enumerate(read_blocks(sys.argv[1])):
         print(i, json.dumps(b, ensure_ascii=False)[:220])
+
+
+def read_tables(path):
+    """Return every table in the doc as a list of rows; each row is a list of cell texts."""
+    with zipfile.ZipFile(path) as z:
+        root = ET.fromstring(z.read("word/document.xml"))
+    tables = []
+    for tbl in root.iter(f"{{{W}}}tbl"):
+        rows = []
+        for tr in tbl.findall(f"{{{W}}}tr"):
+            cells = []
+            for tc in tr.findall(f"{{{W}}}tc"):
+                paras = []
+                for p in tc.iter(f"{{{W}}}p"):
+                    paras.append(_run_text(p))
+                cells.append(" ".join(t.strip() for t in paras if t.strip()))
+            rows.append(cells)
+        tables.append(rows)
+    return tables
