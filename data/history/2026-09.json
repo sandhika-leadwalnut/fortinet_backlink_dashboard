@@ -2,7 +2,7 @@
   "meta": {
     "client": "Fortinet",
     "reportMonth": "2026-09",
-    "reportDate": "October 13 2026",
+    "reportDate": "October 14 2026",
     "periodStart": "December 2025",
     "periodEnd": "September 2026",
     "baselineLabel": "Dec'25",
@@ -23,7 +23,7 @@
       "Sep'26"
     ],
     "sourceFile": "2026-09 Backlink Performance Dashboard data.docx",
-    "generatedAt": "2026-10-13T06:40:21"
+    "generatedAt": "2026-10-14T06:46:34"
   },
   "kpis": {
     "urlsTracked": 45,

@@ -1,15 +1,15 @@
 {
   "meta": {
     "client": "Fortinet",
-    "reportMonth": "2026-09",
+    "reportMonth": "2026-07",
     "reportDate": "October 14 2026",
     "periodStart": "December 2025",
-    "periodEnd": "September 2026",
+    "periodEnd": "July 2026",
     "baselineLabel": "Dec'25",
-    "currentLabel": "Sep'26",
+    "currentLabel": "Jul'26",
     "baselineMonthAbbr": "Dec",
-    "currentMonthName": "September",
-    "linkName": "fortinet-backlinking-dashboard-september2026-copy",
+    "currentMonthName": "July",
+    "linkName": "fortinet-backlinking-dashboard-july2026-test",
     "rankTableMonths": [
       "Dec'25",
       "Jan'26",
@@ -18,58 +18,52 @@
       "Apr'26",
       "May'26",
       "Jun'26",
-      "Jul'26",
-      "Aug'26",
-      "Sep'26"
+      "Jul'26"
     ],
-    "sourceFile": "2026-09 Backlink Performance Dashboard data.docx",
-    "generatedAt": "2026-10-14T06:46:34"
+    "sourceFile": "2026-07 Backlink Performance Dashboard data.docx",
+    "generatedAt": "2026-10-14T07:04:39"
   },
   "kpis": {
-    "urlsTracked": 45,
-    "planTotalBacklinks": 1220,
-    "totalBacklinks": 993,
-    "keywordsTracked": 82
+    "urlsTracked": 42,
+    "planTotalBacklinks": 930,
+    "totalBacklinks": 678,
+    "keywordsTracked": 75
   },
   "daDistribution": [
     {
       "name": "DA 30-40",
-      "value": 171
+      "value": 147
     },
     {
       "name": "DA 41-70",
-      "value": 698
-    },
-    {
-      "name": "DA 71-100",
-      "value": 124
+      "value": 462
     }
   ],
   "keywordRanking": {
     "top3": {
-      "baseline": 6,
-      "current": 18
+      "baseline": 5,
+      "current": 15
     },
     "firstPage": {
-      "baseline": 35,
-      "current": 44
+      "baseline": 26,
+      "current": 37
     }
   },
   "overallRankings": [
     {
       "name": "Page 1\n(Positions 1-10)",
       "baseline": 41683,
-      "current": 46105
+      "current": 44846
     },
     {
       "name": "Position 1",
       "baseline": 6085,
-      "current": 7172
+      "current": 7171
     },
     {
       "name": "Positions 2 & 3",
       "baseline": 10662,
-      "current": 12459
+      "current": 11911
     }
   ],
   "backlinkGrowth": [
@@ -100,35 +94,17 @@
     {
       "month": "Jul '26",
       "totalBacklinks": 678
-    },
-    {
-      "month": "Aug '26",
-      "totalBacklinks": 816
-    },
-    {
-      "month": "Sep '26",
-      "totalBacklinks": 993
     }
   ],
   "top3Keywords": [
     {
       "name": "what is ztna",
-      "change": 6,
-      "rank": 1
-    },
-    {
-      "name": "what is network security",
-      "change": 13,
+      "change": 5,
       "rank": 2
     },
     {
       "name": "What is SD WAN",
-      "change": 6,
-      "rank": 2
-    },
-    {
-      "name": "sd wan",
-      "change": 3,
+      "change": 5,
       "rank": 3
     },
     {
@@ -138,8 +114,8 @@
     },
     {
       "name": "what is sase",
-      "change": 10,
-      "rank": 1
+      "change": 9,
+      "rank": 2
     },
     {
       "name": "firewall",
@@ -148,8 +124,8 @@
     },
     {
       "name": "what is cyber attack",
-      "change": 6,
-      "rank": 2
+      "change": 5,
+      "rank": 3
     },
     {
       "name": "what is ot security",
@@ -163,13 +139,13 @@
     },
     {
       "name": "what is secops",
-      "change": 21,
-      "rank": 1
+      "change": 20,
+      "rank": 2
     },
     {
       "name": "AI Cybersecurity",
-      "change": 0,
-      "rank": 3
+      "change": 1,
+      "rank": 2
     },
     {
       "name": "role of ai in cyber security",
@@ -177,19 +153,9 @@
       "rank": 1
     },
     {
-      "name": "network monitoring system",
-      "change": 26,
-      "rank": 3
-    },
-    {
       "name": "Quantum Computing Security",
       "change": 100,
       "rank": 1
-    },
-    {
-      "name": "Quantum Key Distribution",
-      "change": 1,
-      "rank": 3
     },
     {
       "name": "Quantum Safe Security",
@@ -198,40 +164,45 @@
     },
     {
       "name": "Unified SASE",
-      "change": 0,
+      "change": -2,
+      "rank": 3
+    },
+    {
+      "name": "Ruggedized firewall",
+      "change": 100,
       "rank": 1
     }
   ],
   "firstPageKeywords": [
     {
       "name": "what is ztna",
+      "change": 5,
+      "rank": 2
+    },
+    {
+      "name": "ZTNA",
       "change": 6,
-      "rank": 1
+      "rank": 10
     },
     {
       "name": "what is network security",
-      "change": 13,
-      "rank": 2
-    },
-    {
-      "name": "network security",
-      "change": 5,
-      "rank": 8
+      "change": 10,
+      "rank": 5
     },
     {
       "name": "cybersecurity",
-      "change": 6,
-      "rank": 4
+      "change": 4,
+      "rank": 6
     },
     {
       "name": "What is SD WAN",
-      "change": 6,
-      "rank": 2
+      "change": 5,
+      "rank": 3
     },
     {
       "name": "sd wan",
-      "change": 3,
-      "rank": 3
+      "change": 1,
+      "rank": 5
     },
     {
       "name": "sase",
@@ -240,8 +211,8 @@
     },
     {
       "name": "what is sase",
-      "change": 10,
-      "rank": 1
+      "change": 9,
+      "rank": 2
     },
     {
       "name": "firewall",
@@ -250,13 +221,13 @@
     },
     {
       "name": "what is firewall",
-      "change": 4,
-      "rank": 4
+      "change": 3,
+      "rank": 5
     },
     {
       "name": "what is cyber attack",
-      "change": 6,
-      "rank": 2
+      "change": 5,
+      "rank": 3
     },
     {
       "name": "cyber attack",
@@ -269,29 +240,19 @@
       "rank": 2
     },
     {
-      "name": "ot cyber security",
-      "change": 0,
-      "rank": 5
-    },
-    {
       "name": "ot security",
       "change": 7,
       "rank": 2
     },
     {
-      "name": "secure sd wan",
-      "change": 10,
-      "rank": 6
-    },
-    {
       "name": "what is secops",
-      "change": 21,
-      "rank": 1
+      "change": 20,
+      "rank": 2
     },
     {
       "name": "secops",
-      "change": 9,
-      "rank": 5
+      "change": 5,
+      "rank": 9
     },
     {
       "name": "what is ransomware",
@@ -305,33 +266,23 @@
     },
     {
       "name": "casb",
-      "change": 3,
-      "rank": 7
+      "change": 5,
+      "rank": 5
     },
     {
       "name": "casb security",
-      "change": 11,
-      "rank": 7
-    },
-    {
-      "name": "AI Security",
-      "change": -1,
-      "rank": 9
-    },
-    {
-      "name": "what is ai security",
-      "change": 2,
-      "rank": 5
+      "change": 8,
+      "rank": 10
     },
     {
       "name": "AI Security systems",
-      "change": 3,
-      "rank": 5
+      "change": 2,
+      "rank": 6
     },
     {
       "name": "AI Cybersecurity",
-      "change": 0,
-      "rank": 3
+      "change": 1,
+      "rank": 2
     },
     {
       "name": "role of ai in cyber security",
@@ -340,48 +291,38 @@
     },
     {
       "name": "Application security definition",
-      "change": 6,
-      "rank": 8
+      "change": 7,
+      "rank": 7
     },
     {
       "name": "PAM",
-      "change": -4,
-      "rank": 9
+      "change": -2,
+      "rank": 7
     },
     {
-      "name": "Quantum Safe Encryption",
-      "change": -1,
-      "rank": 6
+      "name": "cybersecurity in banking",
+      "change": 94,
+      "rank": 7
     },
     {
       "name": "cloud security vendors",
-      "change": 3,
-      "rank": 6
+      "change": 4,
+      "rank": 5
     },
     {
       "name": "cloud security providers",
-      "change": -1,
-      "rank": 6
-    },
-    {
-      "name": "network monitoring",
-      "change": 17,
-      "rank": 4
+      "change": -3,
+      "rank": 8
     },
     {
       "name": "network monitoring system",
-      "change": 26,
-      "rank": 3
-    },
-    {
-      "name": "pqc",
-      "change": 1,
-      "rank": 9
+      "change": 25,
+      "rank": 4
     },
     {
       "name": "Post-Quantum Cryptography",
-      "change": -5,
-      "rank": 6
+      "change": -3,
+      "rank": 4
     },
     {
       "name": "Quantum Computing Security",
@@ -390,8 +331,8 @@
     },
     {
       "name": "Quantum Key Distribution",
-      "change": 1,
-      "rank": 3
+      "change": 0,
+      "rank": 4
     },
     {
       "name": "Quantum Safe Security",
@@ -400,110 +341,105 @@
     },
     {
       "name": "Quantum Security",
-      "change": 2,
-      "rank": 6
-    },
-    {
-      "name": "Unified SASE",
-      "change": 0,
-      "rank": 1
-    },
-    {
-      "name": "soar automation",
-      "change": -3,
+      "change": 3,
       "rank": 5
     },
     {
-      "name": "siem products",
-      "change": -1,
-      "rank": 9
+      "name": "Unified SASE",
+      "change": -2,
+      "rank": 3
     },
     {
-      "name": "siem solution",
-      "change": 3,
-      "rank": 8
+      "name": "Ruggedized firewall",
+      "change": 100,
+      "rank": 1
+    },
+    {
+      "name": "siem products",
+      "change": -2,
+      "rank": 10
     }
   ],
   "performanceSummary": [
     {
       "url": "ZTNA",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/what-is-ztna",
-      "backlinkGrowth": 33,
+      "backlinkGrowth": 29,
       "paChange": 5,
-      "bestKeywordMove": "what is ztna (+6)",
-      "worstKeywordMove": "ZTNA (-5)"
+      "bestKeywordMove": "ZTNA (+6)",
+      "worstKeywordMove": "what is ztna (-5)"
     },
     {
       "url": "Network Security",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/what-is-network-security",
-      "backlinkGrowth": 20,
+      "backlinkGrowth": 17,
       "paChange": 0,
-      "bestKeywordMove": "what is network security (+13)",
-      "worstKeywordMove": "network security (-5)"
+      "bestKeywordMove": "what is network security (+10)",
+      "worstKeywordMove": "network security (-1)"
     },
     {
       "url": "Cybersecurity",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/what-is-cybersecurity",
-      "backlinkGrowth": 26,
+      "backlinkGrowth": 21,
       "paChange": 1,
-      "bestKeywordMove": "cybersecurity (+6)",
-      "worstKeywordMove": "-"
+      "bestKeywordMove": "cybersecurity (+4)",
+      "worstKeywordMove": "what is cybersecurity (-1)"
     },
     {
       "url": "SD-WAN",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/sd-wan-explained",
-      "backlinkGrowth": 30,
+      "backlinkGrowth": 26,
       "paChange": 0,
-      "bestKeywordMove": "What is SD WAN (+6)",
-      "worstKeywordMove": "sd wan (-3)"
+      "bestKeywordMove": "What is SD WAN (+5)",
+      "worstKeywordMove": "sd wan (-1)"
     },
     {
       "url": "SASE",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/sase",
-      "backlinkGrowth": 37,
+      "backlinkGrowth": 31,
       "paChange": 0,
-      "bestKeywordMove": "what is sase (+10)",
+      "bestKeywordMove": "what is sase (+9)",
       "worstKeywordMove": "sase (-5)"
     },
     {
       "url": "Firewall",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/firewall",
-      "backlinkGrowth": 39,
+      "backlinkGrowth": 21,
       "paChange": 0,
       "bestKeywordMove": "firewall (+5)",
-      "worstKeywordMove": "what is firewall (-4)"
+      "worstKeywordMove": "what is firewall (-3)"
     },
     {
       "url": "Cyber Attack",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/what-is-cyber-attack",
       "backlinkGrowth": 1,
       "paChange": 1,
-      "bestKeywordMove": "what is cyber attack (+6)",
+      "bestKeywordMove": "what is cyber attack (+5)",
       "worstKeywordMove": "cyber attack (-1)"
     },
     {
       "url": "OT Security",
       "urlLink": "https://www.fortinet.com/solutions/industries/scada-industrial-control-systems/what-is-ot-security",
-      "backlinkGrowth": 27,
+      "backlinkGrowth": 24,
       "paChange": 0,
       "bestKeywordMove": "ot security (+7)",
-      "worstKeywordMove": "-"
+      "worstKeywordMove": "what is ot security (-6)"
     },
     {
       "url": "SD-WAN Products",
       "urlLink": "https://www.fortinet.com/products/sd-wan",
-      "backlinkGrowth": 30,
+      "backlinkGrowth": 13,
       "paChange": 0,
-      "bestKeywordMove": "secure sd wan (+10)",
-      "worstKeywordMove": "SD-WAN solutions (-22)"
+      "bestKeywordMove": "-",
+      "worstKeywordMove": "sdwan solutions (-78)"
     },
     {
       "url": "SecOps",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/what-is-secops",
-      "backlinkGrowth": 37,
+      "backlinkGrowth": 27,
       "paChange": 2,
-      "bestKeywordMove": "what is secops (+21)",
-      "worstKeywordMove": "secops (-9)"
+      "bestKeywordMove": "what is secops (+20)",
+      "worstKeywordMove": "secops (-5)"
     },
     {
       "url": "Ransomware",
@@ -517,30 +453,30 @@
       "url": "Quantum Security Hub",
       "urlLink": "https://www.fortinet.com/resources/hubs/quantum-security",
       "backlinkGrowth": 2,
-      "paChange": 3,
+      "paChange": 59,
       "bestKeywordMove": "-",
       "worstKeywordMove": "-"
     },
     {
       "url": "Cloud Security",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/what-is-cloud-security",
-      "backlinkGrowth": 112,
+      "backlinkGrowth": 68,
       "paChange": 3,
-      "bestKeywordMove": "what is cloud security (+4)",
-      "worstKeywordMove": "cloud security (-5)"
+      "bestKeywordMove": "what is cloud security (+3)",
+      "worstKeywordMove": "cloud security (-2)"
     },
     {
       "url": "CASB",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/casb",
       "backlinkGrowth": 2,
       "paChange": 1,
-      "bestKeywordMove": "casb security (+11)",
-      "worstKeywordMove": "casb (-3)"
+      "bestKeywordMove": "casb security (+8)",
+      "worstKeywordMove": "casb (-5)"
     },
     {
       "url": "FortiAI",
       "urlLink": "https://www.fortinet.com/solutions/enterprise-midsize-business/fortiai",
-      "backlinkGrowth": 11,
+      "backlinkGrowth": 8,
       "paChange": 3,
       "bestKeywordMove": "-",
       "worstKeywordMove": "-"
@@ -548,66 +484,66 @@
     {
       "url": "AI Security",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/ai-security",
-      "backlinkGrowth": 31,
+      "backlinkGrowth": 28,
       "paChange": 1,
-      "bestKeywordMove": "AI Security systems (+3)",
-      "worstKeywordMove": "AI Security (-1)"
+      "bestKeywordMove": "AI Security systems (+2)",
+      "worstKeywordMove": "AI Security (-3)"
     },
     {
       "url": "Cyber Threat Intelligence",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/cyber-threat-intelligence",
       "backlinkGrowth": 12,
       "paChange": 1,
-      "bestKeywordMove": "Threat Intelligence (+13)",
-      "worstKeywordMove": "-"
+      "bestKeywordMove": "Types of threat intelligence (+59)",
+      "worstKeywordMove": "Threat Intelligence (-6)"
     },
     {
       "url": "AI in Cybersecurity",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/artificial-intelligence-in-cybersecurity",
-      "backlinkGrowth": 55,
+      "backlinkGrowth": 41,
       "paChange": 0,
       "bestKeywordMove": "role of ai in cyber security (+100)",
-      "worstKeywordMove": "-"
+      "worstKeywordMove": "AI Cybersecurity (-1)"
     },
     {
       "url": "Application Security",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/application-security",
       "backlinkGrowth": 2,
       "paChange": 5,
-      "bestKeywordMove": "Application security definition (+6)",
+      "bestKeywordMove": "Application security definition (+7)",
       "worstKeywordMove": "Application Security (-2)"
     },
     {
       "url": "Cloud Data Protection",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/cloud-data-protection",
-      "backlinkGrowth": 32,
+      "backlinkGrowth": 17,
       "paChange": 4,
-      "bestKeywordMove": "Cloud Data Security (+19)",
-      "worstKeywordMove": "cloud data protection (-5)"
+      "bestKeywordMove": "Cloud Data Security (+37)",
+      "worstKeywordMove": "Data security in the cloud (-9)"
     },
     {
       "url": "PAM",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/privileged-access-management",
       "backlinkGrowth": 4,
       "paChange": 0,
-      "bestKeywordMove": "Privileged Access Management (+1)",
-      "worstKeywordMove": "PAM (-4)"
+      "bestKeywordMove": "-",
+      "worstKeywordMove": "PAM (-2)"
     },
     {
       "url": "Fortinet Homepage",
       "urlLink": "https://www.fortinet.com/",
-      "backlinkGrowth": 24,
+      "backlinkGrowth": 16,
       "paChange": 1,
-      "bestKeywordMove": "Cybersecurity (+75)",
+      "bestKeywordMove": "Cybersecurity (+74)",
       "worstKeywordMove": "-"
     },
     {
       "url": "Quantum Safe Encryption",
       "urlLink": "https://www.fortinet.com/blog/industry-trends/quantum-safe-encryption-safeguarding-data-for-the-quantum-era",
-      "backlinkGrowth": 14,
+      "backlinkGrowth": 12,
       "paChange": -13,
       "bestKeywordMove": "-",
-      "worstKeywordMove": "Quantum Safe Encryption (-1)"
+      "worstKeywordMove": "-"
     },
     {
       "url": "Cyber Risk",
@@ -622,45 +558,45 @@
       "urlLink": "https://www.fortinet.com/blog/industry-trends/cybersecurity-in-banking",
       "backlinkGrowth": 1,
       "paChange": 2,
-      "bestKeywordMove": "-",
-      "worstKeywordMove": "-"
+      "bestKeywordMove": "cybersecurity in banking (+94)",
+      "worstKeywordMove": "banking cybersecurity (-87)"
     },
     {
       "url": "Best Cloud Security Providers",
       "urlLink": "https://www.fortinet.com/resources/articles/best-cloud-security-providers",
       "backlinkGrowth": 17,
       "paChange": -17,
-      "bestKeywordMove": "cloud security vendors (+3)",
-      "worstKeywordMove": "cloud security providers (-1)"
+      "bestKeywordMove": "cloud security vendors (+4)",
+      "worstKeywordMove": "cloud security providers (-3)"
     },
     {
       "url": "Network Monitoring",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/network-monitoring",
-      "backlinkGrowth": 18,
+      "backlinkGrowth": 14,
       "paChange": 1,
-      "bestKeywordMove": "network monitoring system (+26)",
-      "worstKeywordMove": "network monitoring (-17)"
+      "bestKeywordMove": "network monitoring system (+25)",
+      "worstKeywordMove": "network monitoring (-10)"
     },
     {
       "url": "Shor's & Grover's Algorithms",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/shors-grovers-algorithms",
-      "backlinkGrowth": 27,
+      "backlinkGrowth": 20,
       "paChange": 1,
       "bestKeywordMove": "-",
-      "worstKeywordMove": "grover's algorithm (-95)"
+      "worstKeywordMove": "-"
     },
     {
       "url": "Post-Quantum Cryptography",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/post-quantum-cryptography",
-      "backlinkGrowth": 25,
+      "backlinkGrowth": 18,
       "paChange": 5,
-      "bestKeywordMove": "pqc (+1)",
-      "worstKeywordMove": "Post-Quantum Cryptography (-5)"
+      "bestKeywordMove": "-",
+      "worstKeywordMove": "Post-Quantum Cryptography (-3)"
     },
     {
       "url": "Quantum Computing Security",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/quantum-computing-security",
-      "backlinkGrowth": 15,
+      "backlinkGrowth": 12,
       "paChange": 1,
       "bestKeywordMove": "Quantum Computing Security (+100)",
       "worstKeywordMove": "-"
@@ -668,15 +604,15 @@
     {
       "url": "Quantum Key Distribution",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/quantum-key-distribution",
-      "backlinkGrowth": 22,
+      "backlinkGrowth": 15,
       "paChange": -17,
-      "bestKeywordMove": "Quantum Key Distribution (+1)",
+      "bestKeywordMove": "-",
       "worstKeywordMove": "-"
     },
     {
       "url": "Quantum Safe Security",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/quantum-safe-security",
-      "backlinkGrowth": 14,
+      "backlinkGrowth": 12,
       "paChange": 5,
       "bestKeywordMove": "Quantum Safe Security (+2)",
       "worstKeywordMove": "-"
@@ -684,15 +620,15 @@
     {
       "url": "Quantum Security",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/quantum-security",
-      "backlinkGrowth": 18,
+      "backlinkGrowth": 16,
       "paChange": 3,
-      "bestKeywordMove": "Quantum Security (+2)",
+      "bestKeywordMove": "Quantum Security (+3)",
       "worstKeywordMove": "-"
     },
     {
       "url": "Security Operations Center (SOC)",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/what-is-soc",
-      "backlinkGrowth": 12,
+      "backlinkGrowth": 8,
       "paChange": 1,
       "bestKeywordMove": "-",
       "worstKeywordMove": "-"
@@ -700,39 +636,39 @@
     {
       "url": "Unified SASE",
       "urlLink": "https://www.fortinet.com/solutions/unified-sase",
-      "backlinkGrowth": 51,
+      "backlinkGrowth": 24,
       "paChange": 7,
       "bestKeywordMove": "-",
-      "worstKeywordMove": "-"
+      "worstKeywordMove": "Unified SASE (-2)"
     },
     {
       "url": "Ruggedized firewall",
       "urlLink": "https://www.fortinet.com/products/rugged",
-      "backlinkGrowth": 21,
+      "backlinkGrowth": 12,
       "paChange": 0,
-      "bestKeywordMove": "-",
-      "worstKeywordMove": "industrial firewall (-99)"
+      "bestKeywordMove": "Ruggedized firewall (+100)",
+      "worstKeywordMove": "industrial firewall (-81)"
     },
     {
       "url": "Zero Trust",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/what-is-zero-trust",
-      "backlinkGrowth": 47,
+      "backlinkGrowth": 15,
       "paChange": 0,
-      "bestKeywordMove": "What is Zero Trust (+70)",
-      "worstKeywordMove": "Zero trust (-27)"
+      "bestKeywordMove": "What is Zero Trust (+52)",
+      "worstKeywordMove": "Zero trust (-2)"
     },
     {
       "url": "AI Security Solutions",
       "urlLink": "https://www.fortinet.com/solutions/ai-security",
       "backlinkGrowth": 4,
       "paChange": 1,
-      "bestKeywordMove": "AI Security (+78)",
-      "worstKeywordMove": "-"
+      "bestKeywordMove": "-",
+      "worstKeywordMove": "AI Security (-35)"
     },
     {
       "url": "Cloud Security Services",
       "urlLink": "https://www.fortinet.com/solutions/cloud-security/enterprise",
-      "backlinkGrowth": 51,
+      "backlinkGrowth": 14,
       "paChange": 4,
       "bestKeywordMove": "-",
       "worstKeywordMove": "-"
@@ -740,48 +676,24 @@
     {
       "url": "Soar",
       "urlLink": "https://www.fortinet.com/resources/cyberglossary/what-is-soar",
-      "backlinkGrowth": 6,
+      "backlinkGrowth": 3,
       "paChange": 0,
       "bestKeywordMove": "-",
-      "worstKeywordMove": "soar automation (-3)"
+      "worstKeywordMove": "soar automation (-99)"
     },
     {
       "url": "SIEM",
       "urlLink": "https://www.fortinet.com/products/siem/fortisiem",
-      "backlinkGrowth": 34,
+      "backlinkGrowth": 11,
       "paChange": 0,
-      "bestKeywordMove": "siem solution (+3)",
-      "worstKeywordMove": "siem products (-1)"
+      "bestKeywordMove": "-",
+      "worstKeywordMove": "siem products (-2)"
     },
     {
       "url": "Security Operations",
       "urlLink": "https://www.fortinet.com/solutions/security-operations",
-      "backlinkGrowth": 17,
+      "backlinkGrowth": 5,
       "paChange": 6,
-      "bestKeywordMove": "-",
-      "worstKeywordMove": "-"
-    },
-    {
-      "url": "Malware",
-      "urlLink": "https://www.fortinet.com/resources/cyberglossary/malware",
-      "backlinkGrowth": 2,
-      "paChange": 0,
-      "bestKeywordMove": "-",
-      "worstKeywordMove": "Malware (-5)"
-    },
-    {
-      "url": "Proxy Firewall",
-      "urlLink": "https://www.fortinet.com/resources/cyberglossary/proxy-firewall",
-      "backlinkGrowth": 2,
-      "paChange": 1,
-      "bestKeywordMove": "-",
-      "worstKeywordMove": "-"
-    },
-    {
-      "url": "Proxy Server",
-      "urlLink": "https://www.fortinet.com/resources/cyberglossary/proxy-server",
-      "backlinkGrowth": 1,
-      "paChange": 1,
       "bestKeywordMove": "-",
       "worstKeywordMove": "-"
     }
@@ -789,23 +701,23 @@
   "keyFindings": [
     {
       "title": "High-Quality Domain Profile",
-      "description": "70.3% of acquired referring domains fall in the DA 41–70 range (698 domains), representing the largest share of the portfolio. 17.2% are in the DA 30–40 range (171 domains), while 12.5% are high-authority DA 71–100 domains (124 domains). Overall, 82.8% of referring domains have a DA of 41 or higher, indicating a strong authority profile."
+      "description": "68% of acquired domains fall in the DA 41–70 range (462 domains), representing the largest share of our portfolio. 21.7% are in the DA 30–40 range (147 domains). 10% are high authority DA 71–100 domains (69 domains).Summary: Over 78% of all referring domains are high-authority (DA 41+)."
     },
     {
       "title": "Keyword Visibility",
-      "description": "From December 2025 to September 2026, Top 3 rankings grew 200% (from 6 to 18), and Page 1 rankings grew 25.7% (from 35 to 44)."
+      "description": ".Between December 2025 and July 2026, the keywords experienced significant growth in rankings, with Top 3 positions increasing by 200% (from 5 to 15) and Page 1 rankings improving by 42% (from 26 to 37)."
     },
     {
       "title": "Page Authority (PA) as a Leading Indicator",
-      "description": "PA has improved for several other pages, such as Security Operations (37 → 43), Quantum Safe Security (37 → 42), Cloud Security Enterprise (37 → 41), Cyber Risk is a Business Risk (44 → 46), Cybersecurity in Banking (44 → 46), Cybersecurity (68 → 69 ), Cyber Threat Intelligence (48 → 49), and Quantum Computing Security (46 → 47)."
+      "description": "Page Authority has improved for a few critical pages, such as ZTNA (48 → 53), Secops (48 → 50), Quantum Security (41 → 44), Cloud Security (49 → 52), Cloud Security ( 49 → 52), FortiAI (49 → 52) Cloud Data Protection (43 → 47), Application Security ( 41 → 46) & PQC ( 39 → 44)."
     },
     {
-      "title": "Significant Keyword Improvement",
-      "description": "The keywords what is ZTNA (1), what is SASE (1), what is SecOps (1), role of AI in cyber security (1), Quantum Computing Security (1), Quantum Safe Security (1), What is SD WAN (2), What is Cyber Attack (2), what is network security (2), and network monitoring system (3) showed significant improvement in search ranking."
+      "title": "Significant Keywords Improvement",
+      "description": "The keywords What is ZTNA (2), SASE (2), Firewall (2), what is cyber attack (3), OT Security (2), What is SecOps (2), AI Cybersecurity (2), Quantum Safe Security(1), Ruggedized firewall (1) showed significant improvement in search ranking."
     },
     {
       "title": "Strong Backlink Quality",
-      "description": "73% of acquired backlinks are indexed, showing healthy discovery and indexing performance."
+      "description": "84.5% of acquired backlinks are indexed, indicating that the majority have been successfully discovered by search engines, reflecting strong backlink quality and healthy indexing performance."
     }
   ],
   "acquisitionSheetUrl": "https://docs.google.com/spreadsheets/d/1Ntq8LwzNQFdYi-UKCfjEo7QGeNTqoVxq5xVKXZed-xY/edit?usp=sharing",
@@ -813,55 +725,62 @@
     "serpGroups": [
       {
         "title": "Priority Category Pages",
-        "description": "What is SASE, What is Network Security, and Cyber Attack - moved into Page 1 positions following backlink-driven ranking improvements.",
+        "description": "SD-Wan, Cyberattack, Secops, Cloud Security rank in Page 1 position after an improvement of positions due to backlinks",
         "items": [
           {
-            "keyword": "what is sase",
-            "link": "https://www.fortinet.com/resources/cyberglossary/sase",
-            "position": 4,
-            "image": "/reports/2026-09/serp-what-is-sase.png",
-            "insight": "The \"What is SASE\" keyword has secured a Page 1 position at #4, with consistent backlink acquisition strengthening the page's authority and bringing it within reach of the Top 3."
+            "keyword": "SD Wan",
+            "link": "https://www.fortinet.com/resources/cyberglossary/sd-wan-explained",
+            "position": 2,
+            "image": "/reports/2026-07/serp-sd-wan.png",
+            "insight": "The high-volume \"SD-Wan\" keyword (6K MSV) has maintained stable rankings following recent backlink acquisition, indicating improved ranking consistency and authority."
           },
           {
-            "keyword": "what is network security",
-            "link": "https://www.fortinet.com/resources/cyberglossary/what-is-network-security",
-            "position": 1,
-            "image": "/reports/2026-09/serp-what-is-network-security.png",
-            "insight": "The \"What is Network Security\" keyword has climbed to the #1 position, consolidating its Page 1 presence after sustained backlink acquisition throughout the campaign."
-          },
-          {
-            "keyword": "cyber attack",
+            "keyword": "Cyber Attack",
             "link": "https://www.fortinet.com/resources/cyberglossary/what-is-cyber-attack",
+            "position": 9,
+            "image": "/reports/2026-07/serp-cyber-attack.png",
+            "insight": "Backlink acquisition has helped stabilize the previously volatile \"Cyber Attack\" keyword, improving ranking position."
+          },
+          {
+            "keyword": "Secops",
+            "link": "https://www.fortinet.com/resources/cyberglossary/what-is-secops",
+            "position": 5,
+            "image": "/reports/2026-07/serp-secops.png",
+            "insight": "The high-volume \"Secops\" keyword (2K MSV) has started ranking in Top 5. Backlink acquisition has helped stabilize the previously volatile keyword."
+          },
+          {
+            "keyword": "What is Cloud Security",
+            "link": "https://www.fortinet.com/resources/cyberglossary/what-is-cloud-security",
             "position": 1,
-            "image": "/reports/2026-09/serp-cyber-attack.png",
-            "insight": "The \"Cyber Attack\" keyword has reached the #1 position, demonstrating continued ranking gains driven by consistent backlink acquisition."
+            "image": "/reports/2026-07/serp-what-is-cloud-security.png",
+            "insight": "\"What is Cloud Security\" keyword (1.4K MSV), which had experienced significant ranking volatility, has now reached the #1 position following consistent efforts."
           }
         ]
       },
       {
         "title": "Top Categories",
-        "description": "Quantum & AI Cybersecurity Cyberglossary pages rank in the Top 3 positions on Page 1 post-backlink efforts.",
+        "description": "Quantum & AI Cybersecurity Cyberglossary pages rank in Top 3 position from Page 1 post efforts of backlinks.",
         "items": [
+          {
+            "keyword": "AI Security",
+            "link": "https://www.fortinet.com/resources/cyberglossary/ai-security",
+            "position": 1,
+            "image": "/reports/2026-07/serp-ai-security.png",
+            "insight": "The previously volatile \"AI Security\" keyword has now achieved stable #1 rankings, strengthening Fortinet's visibility in the AI Security Security category."
+          },
           {
             "keyword": "Post-Quantum Cryptography",
             "link": "https://www.fortinet.com/resources/cyberglossary/post-quantum-cryptography",
             "position": 1,
-            "image": "/reports/2026-09/serp-post-quantum-cryptography.png",
-            "insight": "The \"Post Quantum Cryptography\" keyword has reached the #1 position, demonstrating continued ranking gains driven by consistent backlink acquisition."
+            "image": "/reports/2026-07/serp-post-quantum-cryptography.png",
+            "insight": "The highly competitive \"Post-Quantum Cryptography \" keyword (Keyword Difficulty: 73) has improved from position #101 to Position 1, marking a significant gain in search visibility."
           },
           {
-            "keyword": "What is AI Security",
-            "link": "https://www.fortinet.com/resources/cyberglossary/ai-security",
-            "position": 5,
-            "image": "/reports/2026-09/serp-what-is-ai-security.png",
-            "insight": "The \"What is AI Security\" keyword has reached a strong Top 5 position at #5, demonstrating solid search visibility and strengthening Fortinet's presence within the AI security category."
-          },
-          {
-            "keyword": "quantum key distribution",
-            "link": "https://www.fortinet.com/resources/cyberglossary/quantum-key-distribution",
-            "position": 1,
-            "image": "/reports/2026-09/serp-quantum-key-distribution.png",
-            "insight": "The \"Quantum Key Distribution\" keyword has achieved a #1 ranking, giving Fortinet maximum search visibility and strengthening its authority in the quantum cybersecurity category."
+            "keyword": "Quantum Safe Security",
+            "link": "https://www.fortinet.com/resources/cyberglossary/quantum-safe-security",
+            "position": 2,
+            "image": "/reports/2026-07/serp-quantum-safe-security.png",
+            "insight": "The \"Quantum Safe Security\" keyword has consistently maintained a Top 3 ranking, with sustained backlink efforts helping the page to rank from 101."
           }
         ]
       }
@@ -869,50 +788,50 @@
     "llm": [
       {
         "title": "Brand Visibility% Performance",
-        "insight": "Fortinet's overall brand visibility stands in position one among the competitors at 44.5%, indicating a stable lead in AI/LLM search presence.",
-        "image": "/reports/2026-09/llm-brand-visibility-performance.png"
+        "insight": "Fortinet's overall brand visibility stands in position one among the competitors, indicating consistent improvement in AI/LLM search presence.",
+        "image": "/reports/2026-07/llm-brand-visibility-performance.png"
       },
       {
         "title": "Category Brand Visibility Performance",
-        "insight": "Fortinet leads in 6 out of 10 primary categories, achieving a 60% category leadership rate, demonstrating strong authority across the majority of key cybersecurity topics.",
-        "image": "/reports/2026-09/llm-category-brand-visibility-performance.png"
+        "insight": "Fortinet leads in 5 out of 10 primary categories, achieving a 50% category leadership rate, demonstrating strong authority across the majority of key cybersecurity topics.",
+        "image": "/reports/2026-07/llm-category-brand-visibility-performance.png"
       },
       {
         "title": "Category Matrix - Market Positioning",
         "insight": [
           "Fortinet's LLM Marketing positioning",
-          "Citation Leaders - AI in Cybersecurity, Quantum Security & Zero Trust/ZTNA.",
-          "Visibility Leaders - Network Security, Firewall/NGFW & OT Security",
-          "Strongholds - SASE & SD-WAN"
+          "Citation Leaders - Quantum Security & Zero Trust.",
+          "Visibility Leaders - Network Security & Firewall",
+          "Strongholds - AI in Cybersecurity, SASE & SD-Wan"
         ],
-        "image": "/reports/2026-09/llm-category-matrix-market-positioning.png"
+        "image": "/reports/2026-07/llm-category-matrix-market-positioning.png"
       },
       {
         "title": "Top citation domains landscape:",
-        "insight": "Fortinet ranks #1 in the citation domains with a share of 8.71%, outperforming Palo Alto Networks and maintaining a strong lead over all major competitors.",
-        "image": "/reports/2026-09/llm-top-citation-domains-landscape.png"
+        "insight": "Fortinet ranks #1 in the citation domains with a share of 8.74%, outperforming Palo Alto Networks (3.49%) and maintaining a strong lead over all major competitors.",
+        "image": "/reports/2026-07/llm-top-citation-domains-landscape.png"
       }
     ],
     "guestPosts": {
-      "title": "Listicle-type Guest Posts - Third-Party Guest Posts for Brand Mentions",
+      "title": "Listicle type of Guest Posts - Third-Party Guest Posts for Brand Mentions",
       "items": [
         {
-          "title": "5 Best SD-WAN Solutions for Secure and High-Performance Business Networks - Techidemics",
-          "link": "https://techidemics.com/5-best-sd-wan-solutions-for-secure-and-high-performance-business-networks/",
-          "image": "/reports/2026-09/listicle-1-5-best-sd-wan-solutions-for-se.png"
+          "title": "https://droven.io/cloud-security-services/",
+          "link": null,
+          "image": "/reports/2026-07/listicle-1-https-droven-io-cloud-security.png"
         },
         {
-          "title": "5 Cybersecurity Companies With AI-Powered Solutions for SOC Teams - Kracensoft.com",
-          "link": "https://kracensoft.com/5-cybersecurity-companies-with-ai-powered-solutions-for-soc-teams/",
-          "image": "/reports/2026-09/listicle-2-5-cybersecurity-companies-with.png"
+          "title": "https://securitysenses.com/posts/5-best-sd-wan-products-centralized-network-policy-management",
+          "link": "https://securitysenses.com/posts/5-best-sd-wan-products-centralized-network-policy-management",
+          "image": "/reports/2026-07/listicle-2-https-securitysenses-com-posts.png"
         },
         {
-          "title": "5 Cloud Security Providers With Built-In Threat Detection Capabilities | techslassh.com.co",
-          "link": "https://techslassh.com.co/5-cloud-security-providers-with-built-in-threat-detection-capabilities/",
-          "image": "/reports/2026-09/listicle-3-5-cloud-security-providers-wit.png"
+          "title": "https://newsroompanama.com/2026/08/04/7-next-generation-siem-security-software-platforms-for-enterprise-threat-detection/",
+          "link": "https://newsroompanama.com/2026/08/04/7-next-generation-siem-security-software-platforms-for-enterprise-threat-detection/",
+          "image": "/reports/2026-07/listicle-3-https-newsroompanama-com-2026.png"
         }
       ],
-      "insight": "Publishing listicle-style (\"Best\"/\"Top\") commercial-intent content to achieve a dual benefit: earning high-quality backlinks while increasing LLM visibility with brand mentions."
+      "insight": "Publishing listicle-style (\"Best\"/\"Top\") commercial intent content to achieve a dual benefit: earning high-quality backlinks while increasing LLM visibility with brand mentions."
     }
   }
 }
