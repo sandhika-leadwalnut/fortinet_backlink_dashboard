@@ -2,7 +2,7 @@
   "meta": {
     "client": "Fortinet",
     "reportMonth": "2026-10",
-    "reportDate": "November 9 2026",
+    "reportDate": "November 10 2026",
     "periodStart": "December 2025",
     "periodEnd": "October 2026",
     "baselineLabel": "Dec'25",
@@ -24,7 +24,7 @@
       "Oct'26"
     ],
     "sourceFile": "2026-10 Backlink Performance Dashboard data.docx",
-    "generatedAt": "2026-11-09T11:21:43"
+    "generatedAt": "2026-11-10T08:22:52"
   },
   "kpis": {
     "urlsTracked": 46,
@@ -197,11 +197,6 @@
       "rank": 2
     },
     {
-      "name": "Backlinks Added",
-      "change": 0,
-      "rank": 0
-    },
-    {
       "name": "cloud security vendors",
       "change": 6,
       "rank": 3
@@ -215,16 +210,6 @@
       "name": "Quantum Computing Security",
       "change": 100,
       "rank": 1
-    },
-    {
-      "name": "Backlinks Added",
-      "change": -2,
-      "rank": 2
-    },
-    {
-      "name": "Backlinks Added",
-      "change": -2,
-      "rank": 2
     },
     {
       "name": "Proxy Firewall",
@@ -404,11 +389,6 @@
       "rank": 2
     },
     {
-      "name": "Backlinks Added",
-      "change": 0,
-      "rank": 0
-    },
-    {
       "name": "cloud security vendors",
       "change": 6,
       "rank": 3
@@ -422,11 +402,6 @@
       "name": "network monitoring system",
       "change": 27,
       "rank": 2
-    },
-    {
-      "name": "Backlinks Added",
-      "change": -7,
-      "rank": 7
     },
     {
       "name": "pqc",
@@ -447,16 +422,6 @@
       "name": "Quantum Security",
       "change": 4,
       "rank": 4
-    },
-    {
-      "name": "Backlinks Added",
-      "change": -2,
-      "rank": 2
-    },
-    {
-      "name": "Backlinks Added",
-      "change": -2,
-      "rank": 2
     },
     {
       "name": "Soar automation",
@@ -803,7 +768,7 @@
       "backlinkGrowth": 8,
       "paChange": 0,
       "bestKeywordMove": "-",
-      "worstKeywordMove": "Backlinks Added (-2)"
+      "worstKeywordMove": "Soar automation (-2)"
     },
     {
       "url": "SIEM",
@@ -848,27 +813,23 @@
   ],
   "keyFindings": [
     {
-      "title": "1. High-Quality Domain Profile",
+      "title": "High-Quality Domain Profile",
       "description": "71.3% of acquired referring domains fall in the DA 41–70 range (834 domains), representing the largest share of the portfolio. 15.0% are in the DA 30–40 range (176 domains), while 13.7% are high-authority DA 71–100 domains (160 domains). Overall, 85.0% of referring domains have a DA of 41 or higher, indicating a strong domain authority profile."
     },
     {
-      "title": "2. Keyword Visibility",
+      "title": "Keyword Visibility",
       "description": "From December 2025 to October 2026, Top 3 rankings grew 250% (from 6 to 21), and Page 1 rankings grew 28.6% (from 35 to 45)."
     },
     {
-      "title": "3. Overall Ranking Growth",
-      "description": "Position 1 rankings grew 11.4% (6,085 → 6,781), Position 2 & 3 rankings grew 11.2% (10,662 → 11,859), and Page 1 rankings grew 6.3% (41,683 → 44,298) from the baseline to October."
+      "title": "Page Authority Improvements Across Tracked Pages",
+      "description": "PA improved across several pages, including Ransomware (56 → 57), SecOps Solutions (37 → 43), What is Cybersecurity (52 → 53), Cyber Attack (50 → 51), Network Monitoring (44 → 45), Cloud Security Solutions (37 → 41), Proxy Firewall (53 → 54), and Quantum Safe Security (37 → 42)."
     },
     {
-      "title": "4. Page Authority Improvements Across Tracked Pages",
-      "description": "PA improved across several pages, including Ransomware (56 → 57), SecOps Solutions (37 → 43), What is Cybersecurity (52 → 53), Cyber Attack (50 → 51), CASB (49 → 50), Network Monitoring (44 → 45), Cloud Security Solutions (37 → 41), Proxy Firewall (53 → 54), and Quantum Safe Security (37 → 42)."
+      "title": "Significant Keyword Improvement",
+      "description": "The keywords role of AI in cyber security (101 → 1), Quantum Computing Security (101 → 1), what is SecOps (22 → 1), secure SD WAN (16 → 1), what is SASE (11 → 1), what is OT security (8 → 1), network monitoring system (29 → 2), what is network security (15 → 2), and what is cyber attack (8 → 2) showed significant improvements in search rankings."
     },
     {
-      "title": "5. Significant Keyword Improvement",
-      "description": "The keywords \"role of ai in cyber security\" (101 → 1), \"Quantum Computing Security\" (101 → 1), \"what is SecOps\" (22 → 1), \"secure SD WAN\" (16 → 1), \"what is SASE\" (11 → 1), \"what is OT security\" (8 → 1), \"network monitoring system\" (29 → 2), \"what is network security\" (15 → 2), \"What is SD WAN\" (8 → 2), and \"what is cyber attack\" (8 → 2) showed significant improvements in search rankings."
-    },
-    {
-      "title": "6. Backlink Indexation Performance",
+      "title": "Backlink Indexation Performance",
       "description": "75.1% of acquired backlinks (878 out of 1,169) are indexed, indicating that the majority of acquired backlinks have been indexed by Google."
     }
   ],
@@ -877,7 +838,7 @@
     "serpGroups": [
       {
         "title": "Priority Category Pages",
-        "description": "Security Operations, firewall security, and ot security - moved into Page 1 positions following backlink-driven ranking improvements.",
+        "description": "Security Operations, firewall security, and zero day attack - moved into Page 1 positions following backlink-driven ranking improvements.",
         "items": [
           {
             "keyword": "Security Operations",
@@ -894,18 +855,11 @@
             "insight": "The \"Firewall Security\" keyword ranks at #4 on Page 1, with an opportunity to break into the Top 3 through continued backlink acquisition."
           },
           {
-            "keyword": "ot security",
-            "link": "https://www.fortinet.com/solutions/industries/scada-industrial-control-systems/what-is-ot-security",
-            "position": 3,
-            "image": "/reports/2026-10/serp-ot-security.png",
-            "insight": "The \"OT Security\" keyword maintains a strong #3 position, with potential to improve its search visibility further."
-          },
-          {
             "keyword": "zero day attack",
             "link": "https://www.fortinet.com/resources/cyberglossary/zero-day-attack",
             "position": 5,
             "image": "/reports/2026-10/serp-zero-day-attack.png",
-            "insight": "The \"Zero Day Attack\" keyword holds a strong #5 ranking, demonstrating solid search visibility with scope to climb higher."
+            "insight": "The “zero day attack” keyword demonstrated strong ranking stability, holding the #1 position for most of the year before a brief fluctuation and recovering to #5 by October 2026."
           }
         ]
       },
@@ -918,14 +872,14 @@
             "link": "http://www.fortinet.com/resources/cyberglossary/quantum-key-distribution",
             "position": 1,
             "image": "/reports/2026-10/serp-qkd.png",
-            "insight": "The “qkd” keyword maintains a strong #1 position, recovering quickly from minor dips earlier this year."
+            "insight": "The “qkd” keyword maintains a strong #1 position, recovering quickly from minor dips earlier this year through continued backlink acquisition efforts."
           },
           {
             "keyword": "ai managed security",
             "link": "https://www.fortinet.com/resources/cyberglossary/artificial-intelligence-in-cybersecurity",
             "position": 3,
             "image": "/reports/2026-10/serp-ai-managed-security.png",
-            "insight": "The “ai managed security” keyword has moved from outside the top 100 to #3 in the past few months, and the position has held steady since."
+            "insight": "The “ai managed security” keyword has improved from outside the top 100 to #3 in recent months, maintaining its strong position through continued backlink acquisition efforts."
           },
           {
             "keyword": "ai cybersecurity",

@@ -230,7 +230,7 @@ def parse_rank_table(blocks):
     for name, vals in rows:
         low = name.lower()
         kind = ("total" if low.startswith("total ba") else
-                "added" if low.startswith("backlink added") else
+                "added" if (low.startswith("backlink added") or low.startswith("backlinks added")) else
                 "pa" if low.startswith("page authority") else "keyword")
         if cur is None or (cur.get("pa") is not None and kind != "pa"):
             cur = {"total": None, "added": None, "keywords": [], "pa": None}
