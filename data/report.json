@@ -24,7 +24,7 @@
       "Oct'26"
     ],
     "sourceFile": "2026-10 Backlink Performance Dashboard data.docx",
-    "generatedAt": "2026-11-10T08:22:52"
+    "generatedAt": "2026-11-11T04:50:45"
   },
   "kpis": {
     "urlsTracked": 46,
@@ -830,7 +830,7 @@
     },
     {
       "title": "Backlink Indexation Performance",
-      "description": "75.1% of acquired backlinks (878 out of 1,169) are indexed, indicating that the majority of acquired backlinks have been indexed by Google."
+      "description": "75.1% of acquired backlinks are indexed, indicating that the majority of acquired backlinks have been indexed by Google."
     }
   ],
   "acquisitionSheetUrl": "https://docs.google.com/spreadsheets/d/1Ntq8LwzNQFdYi-UKCfjEo7QGeNTqoVxq5xVKXZed-xY/edit?usp=sharing",
